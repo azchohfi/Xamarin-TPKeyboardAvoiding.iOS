@@ -49,6 +49,7 @@ $(LIB_NAME): $(LIB_NAME_I386) $(LIB_NAME_ARMV7) $(LIB_NAME_ARMV7S) $(LIB_NAME_AR
 $(DLL_NAME): $(LIB_NAME)
 	$(MONOXBUILD) /p:Configuration=Release $(PROJECT)
 	cp $(PROJECT_ROOT)/bin/Release/$(DLL_NAME) $(DLL_NAME)
+	cp $(PROJECT_ROOT)/bin/Release/$(DLL_NAME).mdb $(DLL_NAME).mdb
 
 clean:
 	-cd $(PROJECT_ROOT) && rm -rf bin obj *.a *.dll

@@ -3,6 +3,7 @@ obj/
 Pods/
 .DS_Store
 *.dll
+*.mdb
 *.a
 *.userprefs
 *.nupkg

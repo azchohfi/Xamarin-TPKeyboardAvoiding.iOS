@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>TPKeyboardAvoiding.Binding</id>
-    <version>1.3</version>
+    <version>1.3.0.1</version>
 	<title>TPKeyboardAvoiding Xamarin Binding</title>
     <authors>azchohfi</authors>
 	<owners>Alexandre Chohfi</owners>
@@ -14,7 +14,7 @@
 	<iconUrl>http://i.imgur.com/WLyGyFL.png</iconUrl>
   </metadata>
   <files>
-    <file src="TPKeyboardAvoiding.dll" target="lib/MonoTouch" />
-	<file src="TPKeyboardAvoiding.dll.mdb" target="lib/MonoTouch" />
+    <file src="TPKeyboardAvoiding.dll" target="lib/Xamarin.iOS" />
+	<file src="TPKeyboardAvoiding.dll.mdb" target="lib/Xamarin.iOS" />
   </files>
 </package>

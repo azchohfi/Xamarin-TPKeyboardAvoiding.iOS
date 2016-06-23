@@ -25,7 +25,7 @@ package: $(DLL_NAME)
 	nuget pack Package.nuspec
 
 $(PODS_PROJECT):
-	cd $(PROJECT_ROOT) && pod install --no-integrate
+	cd $(PROJECT_ROOT) && pod install
 
 $(LIB_NAME_I386): $(PODS_PROJECT)
 	$(XBUILD) -project $(PODS_PROJECT) -target $(PODS_TARGET) -sdk iphonesimulator -configuration Release clean build

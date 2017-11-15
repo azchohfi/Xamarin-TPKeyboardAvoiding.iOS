@@ -9,3 +9,4 @@ Pods/
 *.nupkg
 
 TPKeyboardAvoiding/build/
+/.vs

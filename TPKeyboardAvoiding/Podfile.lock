@@ -1,8 +1,8 @@
 PODS:
-  - TPKeyboardAvoiding (1.3)
+  - TPKeyboardAvoiding (1.3.1)
 
 DEPENDENCIES:
-  - TPKeyboardAvoiding (~> 1.3)
+  - TPKeyboardAvoiding (~> 1.3.1)
 
 SPEC CHECKSUMS:
   TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe

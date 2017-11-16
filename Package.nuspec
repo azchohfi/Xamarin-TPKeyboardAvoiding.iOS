@@ -15,6 +15,6 @@
   </metadata>
   <files>
     <file src="TPKeyboardAvoiding.dll" target="lib/Xamarin.iOS" />
-	<file src="TPKeyboardAvoiding.dll.pdb" target="lib/Xamarin.iOS" />
+	<file src="TPKeyboardAvoiding.pdb" target="lib/Xamarin.iOS" />
   </files>
 </package>

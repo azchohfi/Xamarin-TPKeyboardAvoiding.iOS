@@ -1,6 +1,5 @@
 BTOUCH=/Developer/MonoTouch/usr/bin/btouch-native
 SMCS=/Developer/MonoTouch/usr/bin/smcs
-MONOXBUILD=/Library/Frameworks/Mono.framework/Commands/xbuild
 XBUILD=/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
 
 PROJECT_NAME=TPKeyboardAvoiding
@@ -13,6 +12,7 @@ LIB_NAME_ARMV7=$(PROJECT_ROOT)/lib$(PROJECT_NAME)-armv7.a
 LIB_NAME_ARMV7S=$(PROJECT_ROOT)/lib$(PROJECT_NAME)-armv7s.a
 LIB_NAME_ARM64=$(PROJECT_ROOT)/lib$(PROJECT_NAME)-arm64.a
 DLL_NAME=$(PROJECT_NAME).dll
+PDB_NAME=$(PROJECT_NAME).pdb
 
 POD_NAME=$(PROJECT_NAME)
 PODS_PROJECT_ROOT=$(PROJECT_ROOT)/Pods
@@ -47,9 +47,9 @@ $(LIB_NAME): $(LIB_NAME_I386) $(LIB_NAME_ARMV7) $(LIB_NAME_ARMV7S) $(LIB_NAME_AR
 	lipo -create -output $@ $^
 
 $(DLL_NAME): $(LIB_NAME)
-	$(MONOXBUILD) /p:Configuration=Release $(PROJECT)
+	msbuild /p:Configuration=Release $(PROJECT)
 	cp $(PROJECT_ROOT)/bin/Release/$(DLL_NAME) $(DLL_NAME)
-	cp $(PROJECT_ROOT)/bin/Release/$(DLL_NAME).mdb $(DLL_NAME).mdb
+	cp $(PROJECT_ROOT)/bin/Release/$(PDB_NAME) $(PDB_NAME)
 
 clean:
 	-cd $(PROJECT_ROOT) && rm -rf bin obj *.a *.dll

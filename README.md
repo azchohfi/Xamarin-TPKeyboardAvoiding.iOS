@@ -2,6 +2,12 @@
 
 These are MonoTouch (Xamarin.iOS) bindings for [TPKeyboardAvoiding](https://github.com/michaeltyson/TPKeyboardAvoiding)
 
+## Download
+
+NuGet: [![NuGet Badge](https://chohfi.visualstudio.com/_apis/public/build/definitions/5b5d5fff-9579-4b1f-bf21-d91546af9f53/15/badge)](https://www.nuget.org/packages/TPKeyboardAvoiding.Binding/)
+
+MyGet: [https://www.myget.org/F/azchohfi/api/v3/index.json](https://www.myget.org/F/azchohfi/api/v3/index.json)
+
 ## Requirements
 
 * iOS SDK
